@@ -55,5 +55,5 @@ https://flask.palletsprojects.com/en/2.0.x/quickstart/?highlight=externally%20vi
 
 ## 5. Sample curl json request
 ```
-$ curl -X POST http://127.0.0.1:5000/receiver -H 'Content-Type: application/json' -d '{"jsonrpc": "2.0", "method": "addEvents"}'
+$ curl -X POST http://127.0.0.1:5000/receiver -H "Content-Type: application/json" -H "Transfer-Encoding: chunked" -d '{"jsonrpc": "2.0", "method": "addEvents"}'
 ```
